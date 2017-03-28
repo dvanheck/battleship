@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=g\ refX\ refY
+comment0.target=void\ display(java.awt.Graphics,\ int,\ int)
+comment0.text=\r\n\ Displays\ the\ object\ on\ the\ screen\r\n\ @param\ \ g\ \ \ Graphics\ used\ to\ draw\r\n\ @param\ \ refX\ \ \ x-coordinate\ of\ a\ point\ of\ reference\ in\ the\ frame(ex\:\ drawing\ on\ \r\n\ @param\ \ refY\ \ \ y-coordinate\ of\ a\ point\ of\ reference\ in\ the\ frame\r\n
+numComments=1

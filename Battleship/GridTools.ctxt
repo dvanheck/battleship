@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=GridTools()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Grid\r\n
+comment1.params=letter
+comment1.target=int\ letterToNum(char)
+comment1.text=\r\n\ Converts\ a\ given\ letter\ from\ A\ -\ J\ to\ the\ y-coordinate\ on\ the\ coordinate\ plane\ (ex\:\ B\ would\ become\ 9\ or\ J\ would\ become\ 1)\r\n\ If\ the\ letter\ is\ invalid,\ return\ -1\r\n\ \r\n\ @param\ \ l\ \ \ the\ letter\ to\ be\ converted\r\n\ @return\ \ \ the\ converted\ y-coordinate\r\n
+comment2.params=num
+comment2.target=char\ numToLetter(int)
+comment2.text=\r\n\ Converts\ a\ given\ number\ on\ the\ coordinate\ plane\ to\ a\ letter\ from\ A\ -\ J\ to\ the(ex\:\ C\ would\ become\ 8\ or\ 2\ would\ become\ I)\r\n\ If\ the\ number\ is\ invalid,\ return\ z\r\n\ \r\n\ @param\ \ num\ \ \ the\ y-coordinate\ to\ be\ converted\ to\ a\ letter\r\n\ @return\ \ \ the\ converted\ letter\r\n
+numComments=3
