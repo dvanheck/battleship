@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Driver here.
+ * Begins the game of Battleship
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author David Van Heck 
+ * @version 1.0
  */
 public class Driver
 {
