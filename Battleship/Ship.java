@@ -1,10 +1,10 @@
 import java.awt.Graphics;
 
 /**
- * Write a description of class Ship here.
+ * Abstract class for each ship type to inherit from
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author David Van Heck
+ * @version 1.0
  */
 public abstract class Ship implements Displayable
 {
@@ -80,7 +80,7 @@ public abstract class Ship implements Displayable
         Double currentHealth = new Double((double)myHealth);
         
         return currentHealth.doubleValue()/maxHealth.doubleValue();
-    }// ends ghe getLength method
+    }// ends the getLength method
     
     /**
      * Gets the number of pegs on the ship
