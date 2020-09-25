@@ -8,7 +8,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 
 /**
- * Where flow of turns is regulated 
+ * Where the flow of turns is regulated 
  * 
  * @author David Van Heck
  * @version 1.0
@@ -18,11 +18,11 @@ public class AIGame implements Game
     // instance variables
     private BattleGrid playerGrid; // the player's grid to store it's ships
     private BattleGrid aiGrid; // the computer's grid to store it's ships
-    private GridTools myGridTools; // used for its methods to convert row letters to row numbers
+    private GridTools myGridTools; // used to convert row letters to row numbers (and visa versa)
     private Random myRng; // responsible for generating random numbers for the AI
     private JFrame myFrame; // frame to display game in
     private GamePanel myGamePanel; // panel to paint on
-    private ArrayList<Coordinate> myCoordinates; // arraylist of all coordinates on grid
+    private ArrayList<Coordinate> myCoordinates; // ArrayList of all coordinates on grid
     
     /**
      * Constructor for objects of class Game
@@ -106,8 +106,6 @@ public class AIGame implements Game
         // show the frame
         myFrame.setVisible(true);
         
-        //myFrame.getContentPane().setBackground(new Color(0, 30, 255));
-        //myFrame.getContentPane().setBackground(new Color(255, 255, 255));
     }// ends method
 
     /**
@@ -211,7 +209,7 @@ public class AIGame implements Game
                     {
                         // check if sqaure is valid
                         isValid = isValidSquare(square); 
-                    }
+                    }// ends else
 
                 }// ends do while 
                 while(isValid == false);
@@ -355,7 +353,7 @@ public class AIGame implements Game
         // display message and add ships to GamePanel
         myGamePanel.setTargetShips(grid.getShips());
         System.out.println("\nThe Computer's ships are ready for battle!\n");
-    }
+    }// ends method
 
     /**
      * Goes through the turns of the game until the game ends
@@ -720,7 +718,6 @@ public class AIGame implements Game
                     /* if there are no possible coordinates in the ArrayList, add possible coordinates
                      * that are above/below
                      */
-                    //if(
                     
                     // if there is only one coordinate, pick that coordinate
                     if(possCoords.size() == 1)
@@ -852,14 +849,10 @@ public class AIGame implements Game
                             System.out.println("The Computer has sunk your " + sunkenShip + "!\n");
                         }// ends if
                     }// ends if
-                    else if(isHit == false)
+                    else
                     {
                         System.out.println("The Computer has missed on " + rowLetter + "" + c + "!\n");
                     }// ends else if
-                    else
-                    {
-                        System.out.println("This should never happen, ever!");
-                    }// ends else
                     
                     // ask user to press enter to continue
                     System.out.print("Press enter to continue...");
@@ -872,11 +865,6 @@ public class AIGame implements Game
                  
             }// ends else if
         }// ends else if
-        else
-        {
-
-        }// ends else
-
     }// ends method
     
     /**
@@ -996,5 +984,4 @@ public class AIGame implements Game
         return isValid;
     }// ends method
     
-
 }// ends class
