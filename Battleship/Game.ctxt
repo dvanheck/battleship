@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.params=
-comment0.target=void\ startGame()
-comment0.text=\r\n\ Begins\ the\ game\r\n\ \r\n\ @param\ \ y\ \ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ \ \ \ the\ result\ produced\ by\ sampleMethod\ \r\n
-comment1.params=
-comment1.target=void\ endGame()
-comment1.text=\r\n\ Ends\ and\ closes\ the\ game\r\n\r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\r\n
-numComments=2
