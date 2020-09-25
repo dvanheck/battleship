@@ -57,12 +57,8 @@ public class AIGame implements Game
         placePlayerShips();
         placeRandomShips(aiGrid);
 
-        // start turns
         startTurns();
-
-        // end game
         endGame();
-
     }// ends method
 
     /**
@@ -71,7 +67,7 @@ public class AIGame implements Game
      */
     public void endGame()
     {
-
+        System.out.println("The game is over");
     }// ends method
     
     /**
@@ -507,14 +503,10 @@ public class AIGame implements Game
                 System.out.println("You have sunk the enemy " + sunkenShip + "!\n");
             }// ends if
         }
-        else if(isHit == false)
+        else
         {
             System.out.println("You have missed on " + rowLetter + "" + c + "!\n");
         }// ends else if
-        else
-        {
-            System.out.println("This should never happen, ever!");
-        }// ends else
     }// ends method
 
     /**
@@ -576,14 +568,10 @@ public class AIGame implements Game
                     System.out.println("The Computer has sunk your " + sunkenShip + "!\n");
                 }// ends if
             }// ends if
-            else if(isHit == false)
+            else
             {
                 System.out.println("The Computer has missed on " + rowLetter + "" + c + "!\n");
             }// ends else if
-            else
-            {
-                System.out.println("This should never happen, ever!");
-            }// ends else
             
             // ask user to press enter to continue
             System.out.print("Press enter to continue...");
@@ -673,14 +661,10 @@ public class AIGame implements Game
                         System.out.println("The Computer has sunk your " + sunkenShip + "!\n");
                     }// ends if
                 }// ends if
-                else if(isHit == false)
+                else
                 {
                     System.out.println("The Computer has missed on " + rowLetter + "" + c + "!\n");
                 }// ends else if
-                else
-                {
-                    System.out.println("This should never happen, ever!");
-                }// ends else
                 
                 // ask user to press enter to continue
                 System.out.print("Press enter to continue...");
@@ -765,14 +749,10 @@ public class AIGame implements Game
                             System.out.println("The Computer has sunk your " + sunkenShip + "!\n");
                         }// ends if
                     }// ends if
-                    else if(isHit == false)
+                    else
                     {
                         System.out.println("The Computer has missed on " + rowLetter + "" + c + "!\n");
                     }// ends else if
-                    else
-                    {
-                        System.out.println("This should never happen, ever!");
-                    }// ends else
                     
                     // ask user to press enter to continue
                     System.out.print("Press enter to continue...");
@@ -968,7 +948,6 @@ public class AIGame implements Game
         boolean isValid; // set to true if square is valid and false if square is invalid
         int r = rParam; // number of the row
         int c = cParam; // number of the column
-    
         
         // if row is in bounds, set isValid to true 
         if(r >= 1 && r <= 10 && c >= 1 && c <= 10)
