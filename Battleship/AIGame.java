@@ -67,7 +67,7 @@ public class AIGame implements Game
      */
     public void endGame()
     {
-        System.out.println("The game is over");
+        System.out.println("The game is over!");
     }// ends method
     
     /**
